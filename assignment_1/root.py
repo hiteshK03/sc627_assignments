@@ -222,7 +222,7 @@ def plot_graphs(params, obs_list, algo):
     plt.show()
 
 def write_to_file(params, algo):
-    filename = "output_"+algo+".txt"
+    filename = "src/sc627_assignments/assignment_1/output_"+algo+".txt"
     file = open(filename, "w")
     for i in params['path']:
         file.write(str(i.x)+", "+str(i.y)+"\n")
